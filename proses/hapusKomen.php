@@ -1,6 +1,6 @@
 <?php 
   // require('../config/db.php');
-  include 'config/db.php';
+  include '../config/db.php';
   $idkomen = $_GET['idKomen'];
   $query = mysqli_query($conn, "DELETE FROM tabel_komentar WHERE idKomen = $idkomen");
   if($query){

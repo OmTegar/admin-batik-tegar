@@ -1,12 +1,12 @@
 <?php 
   // require('../config/db.php');
-  include 'config/db.php';
+  include '../config/db.php';
 
   $UploadDir = 'image/';
 
   if(isset($_POST['upload'])){
     // require('../config/db.php');
-    include 'config/db.php';
+    include '../config/db.php';
 
     $datenow = Date('Y-m-d h:i:sa');
     $filename = md5(($_FILES['foto']['name']).$datenow);
