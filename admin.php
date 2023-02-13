@@ -248,7 +248,7 @@
                               <td class="harga-barang text-center">'.$array['harga'].'</td>
                               <td class="ukuran-barang text-center">'.$array['ukuran'].'</td>
                               <td class="stock-barang text-center">'.$array['stock'].'</td>
-                              <td class="gambar"><img src="../admin/proses/'.$array['path'].'" style="width: 15vw; height:30vh"></td>
+                              <td class="gambar"><img src="../admin/proses/image/'.$array['path'].'" style="width: 15vw; height:30vh"></td>
                               <td class="hapus"><button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal'.$array['idProduk'].'"><i class="glyphicon glyphicon-pencil"></i></button></td>
                             </tr>
                           ';
@@ -320,7 +320,7 @@
                               <td class="harga-barang text-center">'.$array['harga'].'</td>
                               <td class="ukuran-barang text-center">'.$array['ukuran'].'</td>
                               <td class="stock-barang text-center">'.$array['stock'].'</td>
-                              <td class="gambar"><img src="../admin/proses/'.$array['path'].'" style="width: 15vw; height: 30vh"></td>
+                              <td class="gambar"><img src="../admin/proses/image/'.$array['path'].'" style="width: 15vw; height: 30vh"></td>
                               <td class="hapus"><button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal'.$array['idProduk'].'"><i class="glyphicon glyphicon-pencil"></i></button></td>
                             </tr>
                             ';
@@ -390,7 +390,7 @@
                               <td class="harga-barang text-center">'.$array['harga'].'</td>
                               <td class="ukuran-barang text-center">'.$array['ukuran'].'</td>
                               <td class="stock-barang text-center">'.$array['stock'].'</td>
-                              <td class="gambar"><img src="../admin/proses/'.$array['path'].'" style="width: 15vw; height: 30vh"></td>
+                              <td class="gambar"><img src="../admin/proses/image/'.$array['path'].'" style="width: 15vw; height: 30vh"></td>
                               <td class="hapus"><button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal'.$array['idProduk'].'"><i class="glyphicon glyphicon-pencil"></i></button></td>
                             </tr>
                           ';
@@ -460,7 +460,7 @@
                               <td class="harga-barang text-center">'.$array['harga'].'</td>
                               <td class="ukuran-barang text-center">'.$array['ukuran'].'</td>
                               <td class="stock-barang text-center">'.$array['stock'].'</td>
-                              <td class="gambar"><img src="../admin/proses/'.$array['path'].'" style="width: 15vw; height: 30vh"></td>
+                              <td class="gambar"><img src="../admin/proses/image/'.$array['path'].'" style="width: 15vw; height: 30vh"></td>
                               <td class="hapus"><button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal'.$array['idProduk'].'"><i class="glyphicon glyphicon-pencil"></i></button></td>
                             </tr>
                           ';
@@ -530,7 +530,7 @@
                               <td class="harga-barang text-center">'.$array['harga'].'</td>
                               <td class="ukuran-barang text-center">'.$array['ukuran'].'</td>
                               <td class="stock-barang text-center">'.$array['stock'].'</td>
-                              <td class="gambar"><img src="../admin/proses/'.$array['path'].'" style="width: 15vw; height: 30vh"></td>
+                              <td class="gambar"><img src="../admin/proses/image/'.$array['path'].'" style="width: 15vw; height: 30vh"></td>
                               <td class="hapus"><button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal'.$array['idProduk'].'"><i class="glyphicon glyphicon-pencil"></i></button></td>
                             </tr>
                           ';
