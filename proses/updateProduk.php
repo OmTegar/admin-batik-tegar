@@ -1,5 +1,6 @@
 <?php 
-  $conn = mysqli_connect('localhost', 'root', '', 'batiku');
+  require('../config/db.php');
+  // $conn = mysqli_connect('localhost', 'root', '', 'batiku');
 
   $harga = $_POST['harga'];
   $stock = $_POST['stock'];

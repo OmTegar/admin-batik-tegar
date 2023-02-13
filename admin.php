@@ -51,7 +51,8 @@
                   </thead>
                   <tbody>
                     <?php 
-                      $conn = mysqli_connect('localhost', 'root', '', 'batiku');
+                      // $conn = mysqli_connect('localhost', 'root', '', 'batiku');
+                      require('config/db.php');
                       $queryUser = mysqli_query($conn, "SELECT * FROM tabel_user ORDER BY idUser ASC");
                       while($arrayUser = mysqli_fetch_array($queryUser)){
                         echo '
@@ -93,7 +94,8 @@
                   </thead>
                   <tbody>
                     <?php 
-                      $conn = mysqli_connect('localhost', 'root', '', 'batiku');
+                      require('config/db.php');
+                      // $conn = mysqli_connect('localhost', 'root', '', 'batiku');
                       $queryKomen = mysqli_query($conn, "SELECT * FROM tabel_komentar ORDER BY idKomen ASC");
                       $jumlahKomen = mysqli_num_rows($queryKomen); 
                       if($jumlahKomen == 0){
@@ -230,7 +232,8 @@
                       </thead>
                       <tbody>
                       <?php 
-                        $conn = mysqli_connect('localhost', 'root', '', 'batiku');
+                        require('config/db.php');
+                        // $conn = mysqli_connect('localhost', 'root', '', 'batiku');
                         $kategori = 'pria';
                         $query = mysqli_query($conn, "SELECT idProduk, nama, keterangan, harga, ukuran, stock, path FROM tabel_produk WHERE kategori='$kategori' ");
                         while($array = mysqli_fetch_array($query)){
@@ -242,7 +245,7 @@
                               <td class="harga-barang text-center">'.$array['harga'].'</td>
                               <td class="ukuran-barang text-center">'.$array['ukuran'].'</td>
                               <td class="stock-barang text-center">'.$array['stock'].'</td>
-                              <td class="gambar"><img src="proses/'.$array['path'].'" style="width: 15vw; height:30vh"></td>
+                              <td class="gambar"><img src="../../../proses/'.$array['path'].'" style="width: 15vw; height:30vh"></td>
                               <td class="hapus"><button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal'.$array['idProduk'].'"><i class="glyphicon glyphicon-pencil"></i></button></td>
                             </tr>
                           ';
@@ -300,7 +303,8 @@
                       </thead>
                       <tbody>
                         <?php 
-                        $conn = mysqli_connect('localhost', 'root', '', 'batiku');
+                        require('config/db.php');
+                        // $conn = mysqli_connect('localhost', 'root', '', 'batiku');
                         $kategori = 'wanita';
                         $query = mysqli_query($conn, "SELECT idProduk, nama, keterangan, harga, ukuran, stock, path FROM tabel_produk WHERE kategori='$kategori' ");
                         while($array = mysqli_fetch_array($query)){
@@ -312,7 +316,7 @@
                               <td class="harga-barang text-center">'.$array['harga'].'</td>
                               <td class="ukuran-barang text-center">'.$array['ukuran'].'</td>
                               <td class="stock-barang text-center">'.$array['stock'].'</td>
-                              <td class="gambar"><img src="proses/'.$array['path'].'" style="width: 15vw; height: 30vh"></td>
+                              <td class="gambar"><img src="../../../proses/'.$array['path'].'" style="width: 15vw; height: 30vh"></td>
                               <td class="hapus"><button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal'.$array['idProduk'].'"><i class="glyphicon glyphicon-pencil"></i></button></td>
                             </tr>
                             ';
@@ -368,7 +372,8 @@
                       </thead>
                       <tbody>
                         <?php 
-                        $conn = mysqli_connect('localhost', 'root', '', 'batiku');
+                        require('config/db.php');
+                        // $conn = mysqli_connect('localhost', 'root', '', 'batiku');
                         $kategori = 'anak';
                         $query = mysqli_query($conn, "SELECT idProduk, nama, keterangan, harga, ukuran, stock, path FROM tabel_produk WHERE kategori='$kategori' ");
                         while($array = mysqli_fetch_array($query)){
@@ -380,7 +385,7 @@
                               <td class="harga-barang text-center">'.$array['harga'].'</td>
                               <td class="ukuran-barang text-center">'.$array['ukuran'].'</td>
                               <td class="stock-barang text-center">'.$array['stock'].'</td>
-                              <td class="gambar"><img src="proses/'.$array['path'].'" style="width: 15vw; height: 30vh"></td>
+                              <td class="gambar"><img src="../../../proses/'.$array['path'].'" style="width: 15vw; height: 30vh"></td>
                               <td class="hapus"><button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal'.$array['idProduk'].'"><i class="glyphicon glyphicon-pencil"></i></button></td>
                             </tr>
                           ';
@@ -436,7 +441,8 @@
                       </thead>
                       <tbody>
                         <?php 
-                        $conn = mysqli_connect('localhost', 'root', '', 'batiku');
+                        require('config/db.php');
+                        // $conn = mysqli_connect('localhost', 'root', '', 'batiku');
                         $kategori = 'couple';
                         $query = mysqli_query($conn, "SELECT idProduk, nama, keterangan, harga, ukuran, stock, path FROM tabel_produk WHERE kategori='$kategori' ");
                         while($array = mysqli_fetch_array($query)){
@@ -448,7 +454,7 @@
                               <td class="harga-barang text-center">'.$array['harga'].'</td>
                               <td class="ukuran-barang text-center">'.$array['ukuran'].'</td>
                               <td class="stock-barang text-center">'.$array['stock'].'</td>
-                              <td class="gambar"><img src="proses/'.$array['path'].'" style="width: 15vw; height: 30vh"></td>
+                              <td class="gambar"><img src="../../../proses/'.$array['path'].'" style="width: 15vw; height: 30vh"></td>
                               <td class="hapus"><button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal'.$array['idProduk'].'"><i class="glyphicon glyphicon-pencil"></i></button></td>
                             </tr>
                           ';
@@ -504,7 +510,8 @@
                       </thead>
                       <tbody>
                         <?php 
-                        $conn = mysqli_connect('localhost', 'root', '', 'batiku');
+                        require('config/db.php');
+                        // $conn = mysqli_connect('localhost', 'root', '', 'batiku');
                         $kategori = 'sarimbit';
                         $query = mysqli_query($conn, "SELECT idProduk, nama, keterangan, harga, ukuran, stock, path FROM tabel_produk WHERE kategori='$kategori' ");
                         while($array = mysqli_fetch_array($query)){
@@ -516,7 +523,7 @@
                               <td class="harga-barang text-center">'.$array['harga'].'</td>
                               <td class="ukuran-barang text-center">'.$array['ukuran'].'</td>
                               <td class="stock-barang text-center">'.$array['stock'].'</td>
-                              <td class="gambar"><img src="proses/'.$array['path'].'" style="width: 15vw; height: 30vh"></td>
+                              <td class="gambar"><img src="../../../proses/'.$array['path'].'" style="width: 15vw; height: 30vh"></td>
                               <td class="hapus"><button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal'.$array['idProduk'].'"><i class="glyphicon glyphicon-pencil"></i></button></td>
                             </tr>
                           ';
@@ -579,7 +586,8 @@
                   <tbody>
                   <?php 
                     $idUser = $_SESSION['idUser'];
-                    $conn = mysqli_connect('localhost', 'root', '', 'batiku');
+                    require('config/db.php');
+                    // $conn = mysqli_connect('localhost', 'root', '', 'batiku');
                     $queryBarang = mysqli_query($conn, "SELECT * FROM tabel_transaksi WHERE idUser='$idUser'");
 
                     $jumlah = mysqli_num_rows($queryBarang);
@@ -675,7 +683,8 @@
                 </thead>
                 <tbody>
                 <?php 
-                  $conn = mysqli_connect('localhost', 'root', '', 'batiku');
+                  require('config/db.php');
+                  // $conn = mysqli_connect('localhost', 'root', '', 'batiku');
                   $queryAdmin = mysqli_query($conn, "SELECT * FROM tabel_admin");
                   while($arrayAdmin = mysqli_fetch_array($queryAdmin)){
                     echo '

@@ -4,7 +4,7 @@
   $UploadDir = 'image/';
 
   if(isset($_POST['upload'])){
-    $conn = mysqli_connect('localhost', 'root', '', 'batiku');
+    require('../config/db.php');
 
     $datenow = Date('Y-m-d h:i:sa');
     $filename = md5(($_FILES['foto']['name']).$datenow);

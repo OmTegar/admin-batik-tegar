@@ -1,5 +1,6 @@
 <?php 
-  $conn = mysqli_connect('localhost', 'root', '', 'batiku');
+  require('../config/db.php');
+  // $conn = mysqli_connect('localhost', 'root', '', 'batiku');
 
   $idadmin = $_POST['idadmin'];
   $namaadmin = $_POST['namaadmin'];
