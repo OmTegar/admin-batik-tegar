@@ -1,6 +1,7 @@
 <?php 
   session_start();
-  require('../config/db.php');
+  // require('../config/db.php');
+  include 'config/db.php';
   // $conn = mysqli_connect('localhost', 'root', '', 'batiku');
   
   $email = $_POST['email'];

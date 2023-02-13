@@ -1,5 +1,6 @@
 <?php 
-  require('../config/db.php');
+  // require('../config/db.php');
+  include 'config/db.php';
 
   $iduser = $_GET['idUser'];
   $query = mysqli_query($conn, "DELETE FROM tabel_user WHERE idUser = '$iduser'");

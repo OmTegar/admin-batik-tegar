@@ -1,5 +1,6 @@
 <?php 
-  require('../config/db.php');
+  // require('../config/db.php');
+  include 'config/db.php';
   // $conn = mysqli_connect('localhost', 'root', '', 'batiku');
 
   $idadmin = $_POST['idadmin'];
